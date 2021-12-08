@@ -8,13 +8,13 @@ namespace TicTacToe
 {
     class TTTGrid
     {
-        
+
         static void Main(string[] args)
         {
 
             int[] grid = new int[9];
             grid[0] = 2;
-            grid[1] = 0; 
+            grid[1] = 0;
             grid[2] = 1;
             grid[3] = 0;
             grid[4] = 0;
@@ -40,15 +40,7 @@ namespace TicTacToe
                     Console.Write("O");
                 }
 
-                if (i == 2)
-                {
-                    Console.WriteLine();
-                }
-                if (i == 5)
-                {
-                    Console.WriteLine();
-                }
-                if (i == 8)
+                if (i == 2 || i == 5 || i == 8)
                 {
                     Console.WriteLine();
                 }
@@ -67,5 +59,5 @@ namespace TicTacToe
 
         }
 
-        
-}
+
+    }
