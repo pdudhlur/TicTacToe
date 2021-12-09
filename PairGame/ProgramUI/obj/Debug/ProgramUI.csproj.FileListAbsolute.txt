@@ -1,0 +1,2 @@
+D:\PairGame\ProgramUI\obj\Debug\ProgramUI.csproj.AssemblyReference.cache
+D:\PairGame\ProgramUI\obj\Debug\ProgramUI.csproj.CoreCompileInputs.cache
