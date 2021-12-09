@@ -13,15 +13,15 @@ namespace TicTacToe
         {
 
             
-            grid[0] = 2;
+            grid[0] = 0;
             grid[1] = 0;
-            grid[2] = 1;
+            grid[2] = 0;
             grid[3] = 0;
             grid[4] = 0;
-            grid[5] = 1;
+            grid[5] = 0;
             grid[6] = 0;
             grid[7] = 0;
-            grid[8] = 2;
+            grid[8] = 0;
 
 
 
@@ -35,8 +35,6 @@ namespace TicTacToe
                 grid[playerMove] = 1;
                 generateGrid();
             }
-
-
 
             Console.ReadLine();
 
@@ -64,16 +62,12 @@ namespace TicTacToe
                     Console.Write("O");
                 }
 
-                if (i == 2 || i == 5)
+                if (i == 2 || i == 5 || i == 8)
                 {
                     Console.WriteLine();
                 }
                 
-                if (i == 8)
-                {
-                    Console.WriteLine();
-                }
-            }
+                
         }
 
 
