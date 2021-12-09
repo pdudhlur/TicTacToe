@@ -1,0 +1,2 @@
+D:\PairGame\TicTacToe\obj\Debug\TicTacToe.csproj.AssemblyReference.cache
+D:\PairGame\TicTacToe\obj\Debug\TicTacToe.csproj.CoreCompileInputs.cache

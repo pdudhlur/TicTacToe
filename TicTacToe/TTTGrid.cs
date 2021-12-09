@@ -8,11 +8,11 @@ namespace TicTacToe
 {
     class TTTGrid
     {
-
+        static int[] grid = new int[9];
         static void Main(string[] args)
         {
 
-            int[] grid = new int[9];
+            
             grid[0] = 2;
             grid[1] = 0;
             grid[2] = 1;
@@ -25,29 +25,17 @@ namespace TicTacToe
 
 
 
-            for (int i = 0; i < 9; i++)
+            while (true)
             {
-                if (grid[i] == 0)
-                {
-                    Console.Write("_");
-                }
-                if (grid[i] == 1)
-                {
-                    Console.Write("X");
-                }
-                if (grid[i] == 2)
-                {
-                    Console.Write("O");
-                }
+               
+                Console.WriteLine("Pick a number between 0-8");
+                int playerMove = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("You typed " + playerMove);
 
-                if (i == 2 || i == 5 || i == 8)
-                {
-                    Console.WriteLine();
-                }
+                grid[playerMove] = 1;
+                generateGrid();
             }
 
-
-            int userMove = Convert.ToInt32(Console.ReadLine());
 
 
             Console.ReadLine();
@@ -57,6 +45,35 @@ namespace TicTacToe
 
 
 
+        }
+
+        public static void generateGrid()
+        {
+            for (int i = 0; i < 9; i++)
+            {
+                if (grid[i] == 0) //Unused Spot
+                {
+                    Console.Write("_");
+                }
+                if (grid[i] == 1) //Player 1
+                {
+                    Console.Write("X");
+                }
+                if (grid[i] == 2) //Player 2
+                {
+                    Console.Write("O");
+                }
+
+                if (i == 2 || i == 5)
+                {
+                    Console.WriteLine();
+                }
+                
+                if (i == 8)
+                {
+                    Console.WriteLine();
+                }
+            }
         }
 
 
